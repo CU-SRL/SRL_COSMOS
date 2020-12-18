@@ -1,0 +1,33 @@
+2020/12/17 18:31:01.016  INFO: COSMOS Version: 4.5.0
+2020/12/17 18:31:01.016  INFO: Processing CmdTlmServer configuration in file: /Users/japopich/SRL_COSMOS/config/tools/cmd_tlm_server/cmd_tlm_server.txt
+2020/12/17 18:31:01.091  INFO: Processing CmdTlmServer configuration in file: /Users/japopich/SRL_COSMOS/config/targets/CFS/cmd_tlm_server.txt
+2020/12/17 18:31:01.093  INFO: Marshal load success: /Users/japopich/SRL_COSMOS/outputs/tmp/marshal_8e1d9c059446c6e8e32714befa664636.bin
+2020/12/17 18:31:01.305  INFO: Creating thread for router PREIDENTIFIED_ROUTER
+2020/12/17 18:31:01.306  INFO: Creating thread for router PREIDENTIFIED_CMD_ROUTER
+2020/12/17 18:31:01.306  INFO: Starting connection maintenance for PREIDENTIFIED_CMD_ROUTER
+2020/12/17 18:31:01.306  INFO: Connecting to PREIDENTIFIED_CMD_ROUTER...
+2020/12/17 18:31:01.311  INFO: PREIDENTIFIED_CMD_ROUTER Connection Success
+2020/12/17 18:31:01.311  INFO: Starting packet reading for PREIDENTIFIED_ROUTER
+2020/12/17 18:31:01.311  INFO: Connecting to PREIDENTIFIED_ROUTER...
+2020/12/17 18:31:01.311  INFO: PREIDENTIFIED_ROUTER Connection Success
+2020/12/17 18:31:01.311  INFO: Creating thread for interface CFS_INT
+2020/12/17 18:31:01.311  INFO: Starting packet reading for CFS_INT
+2020/12/17 18:31:01.311  INFO: Connecting to CFS_INT...
+2020/12/17 18:31:01.314  ERROR: CFS_INT Connection Failed: ECONNREFUSED : Connection refused - connect(2) for 192.168.117.21:1234
+2020/12/17 18:31:06.317  INFO: Connecting to CFS_INT...
+2020/12/17 18:31:06.322  ERROR: CFS_INT Connection Failed: ECONNREFUSED : Connection refused - connect(2) for 192.168.117.21:1234
+2020/12/17 18:31:11.325  INFO: Connecting to CFS_INT...
+2020/12/17 18:31:11.330  ERROR: CFS_INT Connection Failed: ECONNREFUSED : Connection refused - connect(2) for 192.168.117.21:1234
+2020/12/17 18:31:13.537  INFO: User disconnecting interface CFS_INT
+2020/12/17 18:31:13.537  INFO: Killing thread for interface CFS_INT
+2020/12/17 18:31:13.538  INFO: Stopped packet reading for CFS_INT
+2020/12/17 18:31:13.548  INFO: Disconnected from interface CFS_INT
+2020/12/17 18:31:15.804  INFO: Killing thread for router PREIDENTIFIED_ROUTER
+2020/12/17 18:31:15.804  INFO: Clean disconnect from PREIDENTIFIED_ROUTER (returned nil)
+2020/12/17 18:31:15.805  INFO: Connection Lost for PREIDENTIFIED_ROUTER
+2020/12/17 18:31:15.818  INFO: Stopped packet reading for PREIDENTIFIED_ROUTER
+2020/12/17 18:31:15.826  INFO: Disconnected from router PREIDENTIFIED_ROUTER
+2020/12/17 18:31:15.826  INFO: Killing thread for router PREIDENTIFIED_CMD_ROUTER
+2020/12/17 18:31:15.826  INFO: Stopped packet reading for PREIDENTIFIED_CMD_ROUTER
+2020/12/17 18:31:15.926  INFO: Disconnected from router PREIDENTIFIED_CMD_ROUTER
+2020/12/17 18:31:15.937  INFO: Disconnected from interface CFS_INT

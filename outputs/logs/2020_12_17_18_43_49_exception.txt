@@ -1,0 +1,185 @@
+Exception:
+LoadError : Unable to require 1_2_8_protocol.rb due to cannot load such file -- 1_2_8_protocol.rb. Ensure 1_2_8_protocol.rb is in the COSMOS lib directory.
+
+Parsed output in /Users/japopich/SRL_COSMOS/outputs/tmp/config/targets/CFS/cmd_tlm_server.txt
+
+Parsed output in /Users/japopich/SRL_COSMOS/outputs/tmp/config/tools/cmd_tlm_server/cmd_tlm_server.txt
+/Users/japopich/.rbenv/versions/2.5.8/lib/ruby/gems/2.5.0/gems/cosmos-4.5.0/lib/cosmos/top_level.rb:660:in `require'
+/Users/japopich/.rbenv/versions/2.5.8/lib/ruby/gems/2.5.0/gems/cosmos-4.5.0/lib/cosmos/top_level.rb:660:in `require_file'
+/Users/japopich/.rbenv/versions/2.5.8/lib/ruby/gems/2.5.0/gems/cosmos-4.5.0/lib/cosmos/top_level.rb:648:in `require_class'
+/Users/japopich/.rbenv/versions/2.5.8/lib/ruby/gems/2.5.0/gems/cosmos-4.5.0/lib/cosmos/interfaces/stream_interface.rb:25:in `initialize'
+/Users/japopich/.rbenv/versions/2.5.8/lib/ruby/gems/2.5.0/gems/cosmos-4.5.0/lib/cosmos/interfaces/tcpip_client_interface.rb:35:in `initialize'
+/Users/japopich/.rbenv/versions/2.5.8/lib/ruby/gems/2.5.0/gems/cosmos-4.5.0/lib/cosmos/tools/cmd_tlm_server/cmd_tlm_server_config.rb:146:in `new'
+/Users/japopich/.rbenv/versions/2.5.8/lib/ruby/gems/2.5.0/gems/cosmos-4.5.0/lib/cosmos/tools/cmd_tlm_server/cmd_tlm_server_config.rb:146:in `block (2 levels) in process_file'
+/Users/japopich/.rbenv/versions/2.5.8/lib/ruby/gems/2.5.0/gems/cosmos-4.5.0/lib/cosmos/config/config_parser.rb:200:in `parse_loop'
+/Users/japopich/.rbenv/versions/2.5.8/lib/ruby/gems/2.5.0/gems/cosmos-4.5.0/lib/cosmos/config/config_parser.rb:200:in `parse_file'
+/Users/japopich/.rbenv/versions/2.5.8/lib/ruby/gems/2.5.0/gems/cosmos-4.5.0/lib/cosmos/tools/cmd_tlm_server/cmd_tlm_server_config.rb:75:in `block in process_file'
+/Users/japopich/.rbenv/versions/2.5.8/lib/ruby/gems/2.5.0/gems/cosmos-4.5.0/lib/cosmos/top_level.rb:741:in `set_working_dir'
+/Users/japopich/.rbenv/versions/2.5.8/lib/ruby/gems/2.5.0/gems/cosmos-4.5.0/lib/cosmos/tools/cmd_tlm_server/cmd_tlm_server_config.rb:73:in `process_file'
+/Users/japopich/.rbenv/versions/2.5.8/lib/ruby/gems/2.5.0/gems/cosmos-4.5.0/lib/cosmos/tools/cmd_tlm_server/cmd_tlm_server_config.rb:118:in `block (3 levels) in process_file'
+/Users/japopich/.rbenv/versions/2.5.8/lib/ruby/gems/2.5.0/gems/cosmos-4.5.0/lib/cosmos/tools/cmd_tlm_server/cmd_tlm_server_config.rb:112:in `each'
+/Users/japopich/.rbenv/versions/2.5.8/lib/ruby/gems/2.5.0/gems/cosmos-4.5.0/lib/cosmos/tools/cmd_tlm_server/cmd_tlm_server_config.rb:112:in `block (2 levels) in process_file'
+/Users/japopich/.rbenv/versions/2.5.8/lib/ruby/gems/2.5.0/gems/cosmos-4.5.0/lib/cosmos/config/config_parser.rb:200:in `parse_loop'
+/Users/japopich/.rbenv/versions/2.5.8/lib/ruby/gems/2.5.0/gems/cosmos-4.5.0/lib/cosmos/config/config_parser.rb:200:in `parse_file'
+/Users/japopich/.rbenv/versions/2.5.8/lib/ruby/gems/2.5.0/gems/cosmos-4.5.0/lib/cosmos/tools/cmd_tlm_server/cmd_tlm_server_config.rb:75:in `block in process_file'
+/Users/japopich/.rbenv/versions/2.5.8/lib/ruby/gems/2.5.0/gems/cosmos-4.5.0/lib/cosmos/top_level.rb:741:in `set_working_dir'
+/Users/japopich/.rbenv/versions/2.5.8/lib/ruby/gems/2.5.0/gems/cosmos-4.5.0/lib/cosmos/tools/cmd_tlm_server/cmd_tlm_server_config.rb:73:in `process_file'
+/Users/japopich/.rbenv/versions/2.5.8/lib/ruby/gems/2.5.0/gems/cosmos-4.5.0/lib/cosmos/tools/cmd_tlm_server/cmd_tlm_server_config.rb:49:in `initialize'
+/Users/japopich/.rbenv/versions/2.5.8/lib/ruby/gems/2.5.0/gems/cosmos-4.5.0/lib/cosmos/tools/cmd_tlm_server/cmd_tlm_server.rb:159:in `new'
+/Users/japopich/.rbenv/versions/2.5.8/lib/ruby/gems/2.5.0/gems/cosmos-4.5.0/lib/cosmos/tools/cmd_tlm_server/cmd_tlm_server.rb:159:in `initialize'
+/Users/japopich/.rbenv/versions/2.5.8/lib/ruby/gems/2.5.0/gems/cosmos-4.5.0/lib/cosmos/tools/cmd_tlm_server/cmd_tlm_server_gui.rb:147:in `new'
+/Users/japopich/.rbenv/versions/2.5.8/lib/ruby/gems/2.5.0/gems/cosmos-4.5.0/lib/cosmos/tools/cmd_tlm_server/cmd_tlm_server_gui.rb:147:in `start'
+/Users/japopich/.rbenv/versions/2.5.8/lib/ruby/gems/2.5.0/gems/cosmos-4.5.0/lib/cosmos/tools/cmd_tlm_server/cmd_tlm_server_gui.rb:136:in `block in initialize'
+/Users/japopich/.rbenv/versions/2.5.8/lib/ruby/gems/2.5.0/gems/cosmos-4.5.0/lib/cosmos/gui/dialogs/splash.rb:109:in `block in execute'
+
+Caller Backtrace:
+/Users/japopich/.rbenv/versions/2.5.8/lib/ruby/gems/2.5.0/gems/cosmos-4.5.0/lib/cosmos/top_level.rb:455:in `block (2 levels) in create_log_file'
+/Users/japopich/.rbenv/versions/2.5.8/lib/ruby/gems/2.5.0/gems/cosmos-4.5.0/lib/cosmos/top_level.rb:452:in `synchronize'
+/Users/japopich/.rbenv/versions/2.5.8/lib/ruby/gems/2.5.0/gems/cosmos-4.5.0/lib/cosmos/top_level.rb:452:in `block in create_log_file'
+/Users/japopich/.rbenv/versions/2.5.8/lib/ruby/gems/2.5.0/gems/cosmos-4.5.0/lib/cosmos/top_level.rb:741:in `set_working_dir'
+/Users/japopich/.rbenv/versions/2.5.8/lib/ruby/gems/2.5.0/gems/cosmos-4.5.0/lib/cosmos/top_level.rb:425:in `create_log_file'
+/Users/japopich/.rbenv/versions/2.5.8/lib/ruby/gems/2.5.0/gems/cosmos-4.5.0/lib/cosmos/top_level.rb:482:in `write_exception_file'
+/Users/japopich/.rbenv/versions/2.5.8/lib/ruby/gems/2.5.0/gems/cosmos-4.5.0/lib/cosmos/gui/dialogs/exception_dialog.rb:40:in `initialize'
+/Users/japopich/.rbenv/versions/2.5.8/lib/ruby/gems/2.5.0/gems/cosmos-4.5.0/lib/cosmos/gui/dialogs/splash.rb:119:in `new'
+/Users/japopich/.rbenv/versions/2.5.8/lib/ruby/gems/2.5.0/gems/cosmos-4.5.0/lib/cosmos/gui/dialogs/splash.rb:119:in `block (2 levels) in execute'
+/Users/japopich/.rbenv/versions/2.5.8/lib/ruby/gems/2.5.0/gems/qtbindings-4.8.6.5/lib/Qt4.rb:104:in `block in execute_in_main_thread'
+/Users/japopich/.rbenv/versions/2.5.8/lib/ruby/gems/2.5.0/gems/qtbindings-4.8.6.5/lib/Qt4.rb:57:in `callback_timeout'
+/Users/japopich/.rbenv/versions/2.5.8/lib/ruby/gems/2.5.0/gems/qtbindings-4.8.6.5/lib/Qt/qtruby4.rb:479:in `qt_metacall'
+/Users/japopich/.rbenv/versions/2.5.8/lib/ruby/gems/2.5.0/gems/qtbindings-4.8.6.5/lib/Qt/qtruby4.rb:479:in `method_missing'
+/Users/japopich/.rbenv/versions/2.5.8/lib/ruby/gems/2.5.0/gems/qtbindings-4.8.6.5/lib/Qt/qtruby4.rb:479:in `exec'
+/Users/japopich/.rbenv/versions/2.5.8/lib/ruby/gems/2.5.0/gems/cosmos-4.5.0/lib/cosmos/gui/qt_tool.rb:323:in `block in run'
+/Users/japopich/.rbenv/versions/2.5.8/lib/ruby/gems/2.5.0/gems/cosmos-4.5.0/lib/cosmos/top_level.rb:741:in `set_working_dir'
+/Users/japopich/.rbenv/versions/2.5.8/lib/ruby/gems/2.5.0/gems/cosmos-4.5.0/lib/cosmos/gui/qt_tool.rb:304:in `run'
+/Users/japopich/.rbenv/versions/2.5.8/lib/ruby/gems/2.5.0/gems/cosmos-4.5.0/lib/cosmos/tools/cmd_tlm_server/cmd_tlm_server_gui.rb:646:in `block in run'
+/Users/japopich/.rbenv/versions/2.5.8/lib/ruby/gems/2.5.0/gems/cosmos-4.5.0/lib/cosmos/top_level.rb:556:in `catch_fatal_exception'
+/Users/japopich/.rbenv/versions/2.5.8/lib/ruby/gems/2.5.0/gems/cosmos-4.5.0/lib/cosmos/tools/cmd_tlm_server/cmd_tlm_server_gui.rb:608:in `run'
+/Users/japopich/SRL_COSMOS/tools/mac/CmdTlmServer.app/Contents/MacOS/CmdTlmServer.rb:15:in `block in <main>'
+/Users/japopich/SRL_COSMOS/tools/mac/CmdTlmServer.app/Contents/MacOS/tool_launch.rb:16:in `tool_launch'
+/Users/japopich/SRL_COSMOS/tools/mac/CmdTlmServer.app/Contents/MacOS/CmdTlmServer.rb:13:in `<main>'
+
+Ruby Version: ruby 2.5.8 (2020-03-31 patchlevel 224) [x86_64-darwin20]
+Rubygems Version: 2.7.6.2
+Cosmos Version: 4.5.0
+Cosmos::PATH: /Users/japopich/.rbenv/versions/2.5.8/lib/ruby/gems/2.5.0/gems/cosmos-4.5.0
+Cosmos::USERPATH: /Users/japopich/SRL_COSMOS
+
+Environment:
+RUBYOPT: -r/Users/japopich/.rbenv/versions/2.5.8/lib/ruby/gems/2.5.0/gems/bundler-2.2.2/lib/bundler/setup
+RUBYLIB: /Users/japopich/.rbenv/versions/2.5.8/lib/ruby/gems/2.5.0/gems/bundler-2.2.2/lib:/usr/local/Cellar/rbenv/1.1.2/rbenv.d/exec/gem-rehash
+GEM_PATH: /Users/japopich/.rbenv/versions/2.5.8/lib/ruby/gems/2.5.0:/Users/japopich/.gem/ruby/2.5.0
+GEMRC: 
+RI_DEVKIT: 
+GEM_HOME: /Users/japopich/.rbenv/versions/2.5.8/lib/ruby/gems/2.5.0
+PATH: /Users/japopich/.rbenv/versions/2.5.8/lib/ruby/gems/2.5.0/gems/cosmos-4.5.0/lib/../bin:/Users/japopich/.rbenv/versions/2.5.8/lib/ruby/gems/2.5.0/bin:/Users/japopich/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/Users/japopich/.rbenv/versions/2.5.8/lib/ruby/gems/2.5.0/gems/cosmos-4.5.0/lib/../bin:/Users/japopich/.rbenv/versions/2.5.8/bin:/usr/local/Cellar/rbenv/1.1.2/libexec
+
+Ruby Path:
+  /Users/japopich/.rbenv/versions/2.5.8/lib/ruby/gems/2.5.0/gems/uuidtools-2.2.0/lib
+  /Users/japopich/SRL_COSMOS/lib
+  /Users/japopich/.rbenv/versions/2.5.8/lib/ruby/gems/2.5.0/gems/bundler-2.2.2/lib
+  /usr/local/Cellar/rbenv/1.1.2/rbenv.d/exec/gem-rehash
+  /Users/japopich/.rbenv/versions/2.5.8/lib/ruby/gems/2.5.0/gems/ruby-termios-1.1.0/lib
+  /Users/japopich/.rbenv/versions/2.5.8/lib/ruby/gems/2.5.0/extensions/x86_64-darwin-20/2.5.0/ruby-termios-1.1.0
+  /Users/japopich/.rbenv/versions/2.5.8/lib/ruby/gems/2.5.0/gems/cosmos-4.5.0/lib
+  /Users/japopich/.rbenv/versions/2.5.8/lib/ruby/gems/2.5.0/extensions/x86_64-darwin-20/2.5.0/cosmos-4.5.0
+  /Users/japopich/.rbenv/versions/2.5.8/lib/ruby/gems/2.5.0/gems/uuidtools-2.2.0/lib
+  /Users/japopich/.rbenv/versions/2.5.8/lib/ruby/gems/2.5.0/gems/snmp-1.3.2/lib
+  /Users/japopich/.rbenv/versions/2.5.8/lib/ruby/gems/2.5.0/gems/rubyzip-1.3.0/lib
+  /Users/japopich/.rbenv/versions/2.5.8/lib/ruby/gems/2.5.0/gems/rdoc-6.0.1.1/lib
+  /Users/japopich/.rbenv/versions/2.5.8/lib/ruby/gems/2.5.0/gems/rack-2.2.3/lib
+  /Users/japopich/.rbenv/versions/2.5.8/lib/ruby/gems/2.5.0/gems/qtbindings-4.8.6.5/lib
+  /Users/japopich/.rbenv/versions/2.5.8/lib/ruby/gems/2.5.0/extensions/x86_64-darwin-20/2.5.0/qtbindings-4.8.6.5
+  /Users/japopich/.rbenv/versions/2.5.8/lib/ruby/gems/2.5.0/gems/puma-3.12.6/lib
+  /Users/japopich/.rbenv/versions/2.5.8/lib/ruby/gems/2.5.0/extensions/x86_64-darwin-20/2.5.0/puma-3.12.6
+  /Users/japopich/.rbenv/versions/2.5.8/lib/ruby/gems/2.5.0/gems/pry-doc-0.13.5/lib
+  /Users/japopich/.rbenv/versions/2.5.8/lib/ruby/gems/2.5.0/gems/yard-0.9.25/lib
+  /Users/japopich/.rbenv/versions/2.5.8/lib/ruby/gems/2.5.0/gems/pry-0.13.1/lib
+  /Users/japopich/.rbenv/versions/2.5.8/lib/ruby/gems/2.5.0/gems/method_source-1.0.0/lib
+  /Users/japopich/.rbenv/versions/2.5.8/lib/ruby/gems/2.5.0/gems/opengl-bindings-1.6.10/lib
+  /Users/japopich/.rbenv/versions/2.5.8/lib/ruby/gems/2.5.0/gems/nokogiri-1.10.10/lib
+  /Users/japopich/.rbenv/versions/2.5.8/lib/ruby/gems/2.5.0/extensions/x86_64-darwin-20/2.5.0/nokogiri-1.10.10
+  /Users/japopich/.rbenv/versions/2.5.8/lib/ruby/gems/2.5.0/gems/mini_portile2-2.4.0/lib
+  /Users/japopich/.rbenv/versions/2.5.8/lib/ruby/gems/2.5.0/gems/json-2.1.0/lib
+  /Users/japopich/.rbenv/versions/2.5.8/lib/ruby/gems/2.5.0/extensions/x86_64-darwin-20/2.5.0/json-2.1.0
+  /Users/japopich/.rbenv/versions/2.5.8/lib/ruby/gems/2.5.0/gems/httpclient-2.8.3/lib
+  /Users/japopich/.rbenv/versions/2.5.8/lib/ruby/gems/2.5.0/gems/coderay-1.1.3/lib
+  /Users/japopich/.rbenv/versions/2.5.8/lib/ruby/gems/2.5.0/gems/rake-12.3.3/lib
+  /Users/japopich/.rbenv/versions/2.5.8/lib/ruby/site_ruby/2.5.0
+  /Users/japopich/.rbenv/versions/2.5.8/lib/ruby/site_ruby/2.5.0/x86_64-darwin20
+  /Users/japopich/.rbenv/versions/2.5.8/lib/ruby/site_ruby
+  /Users/japopich/.rbenv/versions/2.5.8/lib/ruby/vendor_ruby/2.5.0
+  /Users/japopich/.rbenv/versions/2.5.8/lib/ruby/vendor_ruby/2.5.0/x86_64-darwin20
+  /Users/japopich/.rbenv/versions/2.5.8/lib/ruby/vendor_ruby
+  /Users/japopich/.rbenv/versions/2.5.8/lib/ruby/2.5.0
+  /Users/japopich/.rbenv/versions/2.5.8/lib/ruby/2.5.0/x86_64-darwin20
+  /Users/japopich/.rbenv/versions/2.5.8/lib/ruby/gems/2.5.0/gems/qtbindings-4.8.6.5/lib/../lib/2.5
+  /Users/japopich/SRL_COSMOS/config/targets/CFS/lib
+  /Users/japopich/SRL_COSMOS/config/targets/CFS/procedures
+
+Gems:
+did_you_mean 1.2.0 ruby
+rake 12.3.3 ruby
+bundler 2.2.2 ruby
+coderay 1.1.3 ruby
+httpclient 2.8.3 ruby
+json 2.1.0 ruby
+mini_portile2 2.4.0 ruby
+nokogiri 1.10.10 ruby
+opengl-bindings 1.6.10 ruby
+method_source 1.0.0 ruby
+pry 0.13.1 ruby
+yard 0.9.25 ruby
+pry-doc 0.13.5 ruby
+puma 3.12.6 ruby
+qtbindings 4.8.6.5 ruby
+rack 2.2.3 ruby
+rdoc 6.0.1.1 ruby
+rubyzip 1.3.0 ruby
+snmp 1.3.2 ruby
+uuidtools 2.2.0 ruby
+cosmos 4.5.0 ruby
+ruby-termios 1.1.0 ruby
+
+All Threads Backtraces:
+/Users/japopich/.rbenv/versions/2.5.8/lib/ruby/gems/2.5.0/gems/cosmos-4.5.0/lib/cosmos/top_level.rb:518:in `backtrace'
+/Users/japopich/.rbenv/versions/2.5.8/lib/ruby/gems/2.5.0/gems/cosmos-4.5.0/lib/cosmos/top_level.rb:518:in `block (2 levels) in write_exception_file'
+/Users/japopich/.rbenv/versions/2.5.8/lib/ruby/gems/2.5.0/gems/cosmos-4.5.0/lib/cosmos/top_level.rb:517:in `each'
+/Users/japopich/.rbenv/versions/2.5.8/lib/ruby/gems/2.5.0/gems/cosmos-4.5.0/lib/cosmos/top_level.rb:517:in `block in write_exception_file'
+/Users/japopich/.rbenv/versions/2.5.8/lib/ruby/gems/2.5.0/gems/cosmos-4.5.0/lib/cosmos/top_level.rb:455:in `block (2 levels) in create_log_file'
+/Users/japopich/.rbenv/versions/2.5.8/lib/ruby/gems/2.5.0/gems/cosmos-4.5.0/lib/cosmos/top_level.rb:452:in `synchronize'
+/Users/japopich/.rbenv/versions/2.5.8/lib/ruby/gems/2.5.0/gems/cosmos-4.5.0/lib/cosmos/top_level.rb:452:in `block in create_log_file'
+/Users/japopich/.rbenv/versions/2.5.8/lib/ruby/gems/2.5.0/gems/cosmos-4.5.0/lib/cosmos/top_level.rb:741:in `set_working_dir'
+/Users/japopich/.rbenv/versions/2.5.8/lib/ruby/gems/2.5.0/gems/cosmos-4.5.0/lib/cosmos/top_level.rb:425:in `create_log_file'
+/Users/japopich/.rbenv/versions/2.5.8/lib/ruby/gems/2.5.0/gems/cosmos-4.5.0/lib/cosmos/top_level.rb:482:in `write_exception_file'
+/Users/japopich/.rbenv/versions/2.5.8/lib/ruby/gems/2.5.0/gems/cosmos-4.5.0/lib/cosmos/gui/dialogs/exception_dialog.rb:40:in `initialize'
+/Users/japopich/.rbenv/versions/2.5.8/lib/ruby/gems/2.5.0/gems/cosmos-4.5.0/lib/cosmos/gui/dialogs/splash.rb:119:in `new'
+/Users/japopich/.rbenv/versions/2.5.8/lib/ruby/gems/2.5.0/gems/cosmos-4.5.0/lib/cosmos/gui/dialogs/splash.rb:119:in `block (2 levels) in execute'
+/Users/japopich/.rbenv/versions/2.5.8/lib/ruby/gems/2.5.0/gems/qtbindings-4.8.6.5/lib/Qt4.rb:104:in `block in execute_in_main_thread'
+/Users/japopich/.rbenv/versions/2.5.8/lib/ruby/gems/2.5.0/gems/qtbindings-4.8.6.5/lib/Qt4.rb:57:in `callback_timeout'
+/Users/japopich/.rbenv/versions/2.5.8/lib/ruby/gems/2.5.0/gems/qtbindings-4.8.6.5/lib/Qt/qtruby4.rb:479:in `qt_metacall'
+/Users/japopich/.rbenv/versions/2.5.8/lib/ruby/gems/2.5.0/gems/qtbindings-4.8.6.5/lib/Qt/qtruby4.rb:479:in `method_missing'
+/Users/japopich/.rbenv/versions/2.5.8/lib/ruby/gems/2.5.0/gems/qtbindings-4.8.6.5/lib/Qt/qtruby4.rb:479:in `exec'
+/Users/japopich/.rbenv/versions/2.5.8/lib/ruby/gems/2.5.0/gems/cosmos-4.5.0/lib/cosmos/gui/qt_tool.rb:323:in `block in run'
+/Users/japopich/.rbenv/versions/2.5.8/lib/ruby/gems/2.5.0/gems/cosmos-4.5.0/lib/cosmos/top_level.rb:741:in `set_working_dir'
+/Users/japopich/.rbenv/versions/2.5.8/lib/ruby/gems/2.5.0/gems/cosmos-4.5.0/lib/cosmos/gui/qt_tool.rb:304:in `run'
+/Users/japopich/.rbenv/versions/2.5.8/lib/ruby/gems/2.5.0/gems/cosmos-4.5.0/lib/cosmos/tools/cmd_tlm_server/cmd_tlm_server_gui.rb:646:in `block in run'
+/Users/japopich/.rbenv/versions/2.5.8/lib/ruby/gems/2.5.0/gems/cosmos-4.5.0/lib/cosmos/top_level.rb:556:in `catch_fatal_exception'
+/Users/japopich/.rbenv/versions/2.5.8/lib/ruby/gems/2.5.0/gems/cosmos-4.5.0/lib/cosmos/tools/cmd_tlm_server/cmd_tlm_server_gui.rb:608:in `run'
+/Users/japopich/SRL_COSMOS/tools/mac/CmdTlmServer.app/Contents/MacOS/CmdTlmServer.rb:15:in `block in <main>'
+/Users/japopich/SRL_COSMOS/tools/mac/CmdTlmServer.app/Contents/MacOS/tool_launch.rb:16:in `tool_launch'
+/Users/japopich/SRL_COSMOS/tools/mac/CmdTlmServer.app/Contents/MacOS/CmdTlmServer.rb:13:in `<main>'
+
+/Users/japopich/.rbenv/versions/2.5.8/lib/ruby/gems/2.5.0/gems/cosmos-4.5.0/lib/cosmos/utilities/sleeper.rb:27:in `select'
+/Users/japopich/.rbenv/versions/2.5.8/lib/ruby/gems/2.5.0/gems/cosmos-4.5.0/lib/cosmos/utilities/sleeper.rb:27:in `sleep'
+/Users/japopich/.rbenv/versions/2.5.8/lib/ruby/gems/2.5.0/gems/cosmos-4.5.0/lib/cosmos/gui/qt_tool.rb:487:in `block (2 levels) in redirect_io'
+/Users/japopich/.rbenv/versions/2.5.8/lib/ruby/gems/2.5.0/gems/cosmos-4.5.0/lib/cosmos/gui/qt_tool.rb:472:in `loop'
+/Users/japopich/.rbenv/versions/2.5.8/lib/ruby/gems/2.5.0/gems/cosmos-4.5.0/lib/cosmos/gui/qt_tool.rb:472:in `block in redirect_io'
+
+/Users/japopich/.rbenv/versions/2.5.8/lib/ruby/gems/2.5.0/gems/qtbindings-4.8.6.5/lib/Qt4.rb:107:in `sleep'
+/Users/japopich/.rbenv/versions/2.5.8/lib/ruby/gems/2.5.0/gems/qtbindings-4.8.6.5/lib/Qt4.rb:107:in `execute_in_main_thread'
+/Users/japopich/.rbenv/versions/2.5.8/lib/ruby/gems/2.5.0/gems/cosmos-4.5.0/lib/cosmos/gui/dialogs/splash.rb:118:in `block in execute'
+
+/Users/japopich/.rbenv/versions/2.5.8/lib/ruby/gems/2.5.0/gems/cosmos-4.5.0/lib/cosmos/tools/cmd_tlm_server/cmd_tlm_server_gui.rb:428:in `sleep'
+/Users/japopich/.rbenv/versions/2.5.8/lib/ruby/gems/2.5.0/gems/cosmos-4.5.0/lib/cosmos/tools/cmd_tlm_server/cmd_tlm_server_gui.rb:428:in `block in process_server_messages'
+
+
+
