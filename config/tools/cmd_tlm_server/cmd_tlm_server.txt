@@ -1,3 +1,7 @@
 TITLE 'COSMOS Command and Telemetry Server'
-AUTO_INTERFACE_TARGETS # Use cmd_tlm_server.txt from all targets declared in system.txt
-#COLLECT_METADATA
+# AUTO_INTERFACE_TARGETS # Use cmd_tlm_server.txt from all targets declared in system.txt
+# COLLECT_METADATA
+
+INTERFACE CFS_INT udp_cs_interface.rb 192.168.117.21 1234 1235 nil nil 128 nil nil
+  TARGET SYSTEM
+  TARGET SAMPLE_APP
