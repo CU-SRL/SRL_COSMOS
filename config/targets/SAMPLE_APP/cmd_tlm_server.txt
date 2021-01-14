@@ -4,5 +4,6 @@
 # Modify this according to your actual target connection
 # Please see the COSMOS Interface Configuration documentation
 
-INTERFACE SAMPLE_APP_INT udp_cs_interface.rb 192.168.117.21 1234 1235 nil nil 128 nil nil
-  TARGET SAMPLE_APP
+#INTERFACE SAMPLE_APP_INT udp_cs_interface.rb 192.168.1.58 1234 1235 nil nil 128 nil nil
+
+TARGET SAMPLE_APP
