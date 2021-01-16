@@ -44,7 +44,6 @@ GEM
     yard (0.9.25)
 
 PLATFORMS
-  ruby
   x86_64-darwin-20
 
 DEPENDENCIES
