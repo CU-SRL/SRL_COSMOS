@@ -4,6 +4,7 @@ TELEMETRY CFE_TBL HK_TLM_PKT BIG_ENDIAN "Telemetry and Housekeeping Packet for T
   APPEND_ITEM CCSDS_LENGTH           16 UINT "CCSDS Packet Data Length" BIG_ENDIAN
   APPEND_ITEM CCSDS_SECONDS        32 UINT "CCSDS Telemetry Secondary Header (seconds)"
   APPEND_ITEM CCSDS_SUBSECS        16 UINT "CCSDS Telemetry Secondary Header (subseconds)"
+  APPEND_ITEM PADDING                        32 UINT "Padding for 64 bit boundary"
   APPEND_ITEM CMD_VALID_COUNT         8 UINT "Count of valid commands received."
   APPEND_ITEM CMD_ERROR_COUNT         8 UINT "Count of invalid commands received."
   APPEND_ITEM NUM_TABLES             16 UINT "Number of Tables Registered."
@@ -20,8 +21,7 @@ TELEMETRY CFE_TBL HK_TLM_PKT BIG_ENDIAN "Telemetry and Housekeeping Packet for T
   APPEND_ITEM NUM_VAL_REQUESTS        8 UINT "Number of times Table Services has requested validations from Apps."
   APPEND_ITEM NUM_FREE_SHARED_BUFS    8 UINT "Number of free Shared Working Buffers."
   APPEND_ITEM BYTE_ALIGN_PAD1         8 UINT "Spare byte to ensure longword alignment."
-  APPEND_ITEM MEM_POOL_HANDLE        32 UINT "Handle to TBL's memory pool."
-  APPEND_ITEM MEM_POOL_HANDLE 32 UINT "Handle to TBL's memory pool"
+  APPEND_ITEM MEM_POOL_HANDLE        64 UINT "Handle to TBL's memory pool."
   APPEND_ITEM LAST_UPD_TIME_SECONDS  32 UINT "Number of seconds since epoch. (Parent: Time of last table update.)"
   APPEND_ITEM LAST_UPD_TIME_SUBSECS  32 UINT "Number of subseconds since epoch (LSB = 2^(-32) seconds). (Parent: Time of last table update.)"
   APPEND_ITEM LAST_UPD_TBL_NAME     304 STRING "Name of the last table updated."
