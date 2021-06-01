@@ -4,7 +4,6 @@ TELEMETRY CFE_TIME HK_TLM_PKT BIG_ENDIAN "Housekeeping Data for Time Services"
   APPEND_ITEM CCSDS_LENGTH           16 UINT "CCSDS Packet Data Length" BIG_ENDIAN
   APPEND_ITEM CCSDS_SECONDS        32 UINT "CCSDS Telemetry Secondary Header (seconds)"
   APPEND_ITEM CCSDS_SUBSECS        16 UINT "CCSDS Telemetry Secondary Header (subseconds)"
-  APPEND_ITEM PADDING                        32 UINT "Padding for 64 bit boundary"
   APPEND_ITEM CMD_VALID_COUNT    8 UINT "Time Command Execution Counter."
   APPEND_ITEM CMD_ERROR_COUNT    8 UINT "Time Command Error Counter."
   APPEND_ITEM CLOCK_STATE_FLAGS 16 UINT "State Flags. See cfe_time_msg.h. Will need to bit bust."
@@ -20,8 +19,6 @@ TELEMETRY CFE_TIME HK_TLM_PKT BIG_ENDIAN "Housekeeping Data for Time Services"
   APPEND_ITEM STCF_SUBSECS      32 UINT "STCF (sub-seconds)."
   APPEND_ITEM 1HZADJ_SECONDS    32 UINT "1 Hz SCTF adjustment (seconds)."
   APPEND_ITEM 1HZADJ_SUBSECS    32 UINT "1 Hz SCTF adjustment (sub-seconds)."
-  APPEND_ITEM DELAY_SECONDS 32 UINT "Current 1 Hz SCTF Delay (seconds)"
-  APPEND_ITEM DELAY_SUBSECS 32 UINT "Current 1 Hz SCTF Delay (subseconds)"
 
 TELEMETRY CFE_TIME DIAG_TLM_PKT BIG_ENDIAN "Time Services Diagnostic Packet sent in response to SEND_DIAG command"
   APPEND_ID_ITEM CCSDS_STREAMID 16 UINT 0x0806 "CCSDS Packet Identification" BIG_ENDIAN
