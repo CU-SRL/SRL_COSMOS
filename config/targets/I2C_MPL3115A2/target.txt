@@ -1,6 +1,6 @@
 # If you have custom limits responses or conversions you require them here
-#REQUIRE SRL_I2C_limits_response.rb
-#REQUIRE SRL_I2C_conversion.rb
+#REQUIRE I2C_MPL3115A2_limits_response.rb
+#REQUIRE I2C_MPL3115A2_conversion.rb
 
 # Ignored Parameters
 # (parameters you don't want to see by default in various tools)

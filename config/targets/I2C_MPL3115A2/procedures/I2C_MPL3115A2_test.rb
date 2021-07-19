@@ -1,16 +1,16 @@
 # To add this test to Test Runner edit config/tools/test_runner/test_runner.txt
 # Add this line:
-#   LOAD_UTILITY 'srl_i2c_test'
+#   LOAD_UTILITY 'I2C_MPL3115A2_test'
 #
 # Test Runner test script
-class SRL_I2CTest < Cosmos::Test
+class I2C_MPL3115A2Test < Cosmos::Test
   # def setup
   #   # Implement group level setup
   # end
 
   def test_command
-    cmd("SRL_I2C COMMAND")
-    wait_check("SRL_I2C STATUS BOOL == 'FALSE'", 5)
+    cmd("I2C_MPL3115A2 COMMAND")
+    wait_check("I2C_MPL3115A2 STATUS BOOL == 'FALSE'", 5)
   end
 
   # def teardown
@@ -18,14 +18,14 @@ class SRL_I2CTest < Cosmos::Test
   # end
 end
 
-class SRL_I2CSuite < Cosmos::TestSuite
+class I2C_MPL3115A2Suite < Cosmos::TestSuite
   # def setup
   #   # Implement suite level setup
   # end
 
   def initialize
     super()
-    add_test('SRL_I2CTest')
+    add_test('I2C_MPL3115A2Test')
   end
 
   # def teardown

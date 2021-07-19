@@ -1,10 +1,10 @@
 # This class can be used in your scripts like so:
-#   require 'srl_i2c'
-#   srl_i2c = srl_i2c.new
-#   srl_i2c.utility
+#   require 'I2C_MPL3115A2'
+#   I2C_MPL3115A2 = I2C_MPL3115A2.new
+#   I2C_MPL3115A2.utility
 # For more information see the COSMOS scripting guide
 
-class srl_i2c
+class I2C_MPL3115A2
   def utility
   end
 end
