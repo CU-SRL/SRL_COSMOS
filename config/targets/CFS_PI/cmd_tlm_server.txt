@@ -4,5 +4,5 @@
 # Modify this according to your actual target connection
 # Please see the COSMOS Interface Configuration documentation
 
-INTERFACE CFS_PI_INT udp_cs_interface.rb 192.168.1.58 1234 1235 nil nil 128 nil nil
+INTERFACE CFS_PI_INT udp_cs_interface.rb 10.0.1.91 1234 1235 nil nil 128 nil nil
   TARGET CFS_PI

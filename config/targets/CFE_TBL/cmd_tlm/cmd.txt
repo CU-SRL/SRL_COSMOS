@@ -33,11 +33,11 @@ COMMAND CFE_TBL DUMP_TBL BIG_ENDIAN "Dumps the contents of the specified table b
 COMMAND CFE_TBL VALIDATE_TBL BIG_ENDIAN "Calculates the Data Integrity Value for specified table then notifies the owning application that the tables validation function should be executed"
   APPEND_ID_PARAMETER CCSDS_STREAMID 16 UINT MIN_UINT16 MAX_UINT16 0x1804 "CCSDS Packet Identification" BIG_ENDIAN
   APPEND_PARAMETER CCSDS_SEQUENCE 16 UINT MIN_UINT16 MAX_UINT16 0xC000 "CCSDS Packet Sequence Control" BIG_ENDIAN
-  APPEND_PARAMETER CCSDS_LENGTH 16 UINT MIN_UINT16 MAX_UINT16 41 "CCSDS Packet Data Length" BIG_ENDIAN
+  APPEND_PARAMETER CCSDS_LENGTH 16 UINT MIN_UINT16 MAX_UINT16 43 "CCSDS Packet Data Length" BIG_ENDIAN
   APPEND_PARAMETER CCSDS_CHECKSUM 8 UINT MIN_UINT8 MAX_UINT8 0 "CCSDS Command Checksum"
   APPEND_PARAMETER CCSDS_FC 8 UINT MIN_UINT8 MAX_UINT8 4 "CCSDS Command Function Code"
-  APPEND_PARAMETER ACTIVE_TBL_FLAG  16 UINT MIN_UINT16 MAX_UINT16 0 "0=Inactive Table, 1=Active Table"
-  APPEND_PARAMETER TABLE_NAME      304 STRING "default" "Full Name of Table to be validated."
+  APPEND_PARAMETER ACTIVE_TBL_FLAG  16 UINT MIN_UINT16 MAX_UINT16 0 "0=Inactive Table, 1=Active Table" LITTLE_ENDIAN
+  APPEND_PARAMETER TABLE_NAME      320 STRING "default" "Full Name of Table to be validated."
   
 COMMAND CFE_TBL ACTIVATE_TBL BIG_ENDIAN "Notifies the table's owner that an update is pending and will be executed at the owning application's convenience"
   APPEND_ID_PARAMETER CCSDS_STREAMID 16 UINT MIN_UINT16 MAX_UINT16 0x1804 "CCSDS Packet Identification" BIG_ENDIAN

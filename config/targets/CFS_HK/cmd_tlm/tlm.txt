@@ -9,4 +9,5 @@ TELEMETRY CFS_HK HK_TLM_PKT BIG_ENDIAN "Housekeeping Packet for Housekeeping app
   APPEND_ITEM PADDING 16 UINT "Padding to force 32-bit alignment"
   APPEND_ITEM COMB_PKTS_SENT 16 UINT "Count of combined tlm packets sent"
   APPEND_ITEM MISSING_DATA_COUNT 16 UINT "Number of times missing data was detected"
-  APPEND_ITEM MEMPOOL_HANDLE 32 UINT "Memory pool handle used to get mempool diags"
+  APPEND_ITEM MEMPOOL_HANDLE 64 UINT "Memory pool handle used to get mempool diags"
+     FORMAT_STRING  "0x%04X"
