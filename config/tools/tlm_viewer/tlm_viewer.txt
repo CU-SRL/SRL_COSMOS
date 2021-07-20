@@ -3,3 +3,10 @@ AUTO_TARGETS
 # TARGET "INST"
 #  SCREEN "adcs.txt"
 
+# Example Grouping of Screens (Possibility to group screens of different targets together)
+# Possible Uses: hk groups, command groups, data/telemetry groups, etc.
+GROUP "Sample Group"
+GROUP_SCREEN SAMPLE_APP status.txt
+#SHOW_ON_STARTUP --> Uncomment to show the above screen automatically when telemtry viewer starts
+GROUP_SCREEN SAMPLE_APP data.txt
+#SHOW_ON_STARTUP --> Uncomment to show the above screen automatically when telemtry viewer starts
