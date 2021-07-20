@@ -1,0 +1,153 @@
+
+SCREEN 1280 720 1.0
+
+SCROLLWINDOW
+
+HORIZONTALBOX
+    CANVAS 300 182
+      CANVASIMAGE "SRLBLACKMAIN.png" 0 0
+    END
+    VERTICALBOX
+        LIMITSCOLOR SAMPLE_APP STATUS CMD_VALID_COUNT
+        LIMITSCOLOR SAMPLE_APP STATUS CMD_VALID_COUNT
+        LABEL "Need to add APP_STATUS tlm point to every HK_TLM_PKT to create Gum Balls to show App Status"
+        LABEL "The APP_STATUS tlm point should be equal to 1 and never change"
+    END
+END
+
+HORIZONTALBOX
+    VERTICALBOX
+        HORIZONTALBOX
+            VERTICALBOX
+              SECTIONHEADER "Command & Telemetry"
+              BUTTON 'TO_LAB ENABLE' 'ip_addr = system("ifconfig | grep -w \"inet\" | grep 192 | awk \'{ print $2 }\'");cmd("TO_LAB OUTPUT_ENABLE with IP_ADDR #{ip_addr}")'
+              BUTTON 'ENABLE DEBUG' 'cmd("CFE_EVS ENA_EVENT_TYPE with BITMASK 1")'
+            END
+            VERTICALBOX
+              SECTIONHEADER "Startup Scripts"
+              BUTTON 'Connection Check' 'icmd("CFE_ES NOOP")'
+              BUTTON 'Hardware Check' 'cmd("CFE_ES NOOP")'
+            END
+        END
+
+
+        TITLE "Command Counts"
+        TABBOOK
+            TABITEM "CFE APPS (CORE)"
+                VERTICALBOX
+                    VERTICALBOX
+                      SECTIONHEADER "CFE_ES - Executive Services"
+                      LABELVALUE CFE_ES HK_TLM_PKT CMD_VALID_COUNT
+                      LABELVALUE CFE_ES HK_TLM_PKT CMD_ERROR_COUNT
+                      BUTTON 'CFE_ES NOOP' 'cmd("CFE_ES NOOP")'
+                    END
+                    VERTICALBOX
+                      SECTIONHEADER "CFE_EVS - Event Services"
+                      LABELVALUE CFE_EVS HK_TLM_PKT CMD_VALID_COUNT
+                      LABELVALUE CFE_EVS HK_TLM_PKT CMD_ERROR_COUNT
+                      BUTTON 'CFE_EVS NOOP' 'cmd("CFE_ES NOOP")'
+                    END
+                    VERTICALBOX
+                      SECTIONHEADER "CFE_SB - Software Bus"
+                      LABELVALUE CFE_SB HK_TLM_PKT CMD_VALID_COUNT
+                      LABELVALUE CFE_SB HK_TLM_PKT CMD_ERROR_COUNT
+                      BUTTON 'CFE_SB NOOP' 'cmd("CFE_ES NOOP")'
+                    END
+                    VERTICALBOX
+                      SECTIONHEADER "CFE_TBL - Table Manager"
+                      LABELVALUE CFE_TBL HK_TLM_PKT CMD_VALID_COUNT
+                      LABELVALUE CFE_TBL HK_TLM_PKT CMD_ERROR_COUNT
+                      BUTTON 'CFE_TBL NOOP' 'cmd("CFE_ES NOOP")'
+                    END
+                    VERTICALBOX
+                      SECTIONHEADER "CFE_TIME - Time"
+                      LABELVALUE CFE_TIME HK_TLM_PKT CMD_VALID_COUNT
+                      LABELVALUE CFE_TIME HK_TLM_PKT CMD_ERROR_COUNT
+                      BUTTON 'CFE_TIME NOOP' 'cmd("CFE_ES NOOP")'
+                    END
+                END
+            END
+            TABITEM "CFS APPS"
+                VERTICALBOX
+                    VERTICALBOX
+                      SECTIONHEADER "CFS_CS - Checksum App"
+                      LABELVALUE CFS_CS HK_TLM_PKT CMD_VALID_COUNT
+                      LABELVALUE CFS_CS HK_TLM_PKT CMD_ERROR_COUNT
+                      BUTTON 'CFS_CS NOOP' 'cmd("CFS_CS NOOP")'
+                    END
+                    VERTICALBOX
+                      SECTIONHEADER "CFS_DS - Data Storage App"
+                      LABELVALUE CFS_DS HK_TLM_PKT CMD_VALID_COUNT
+                      LABELVALUE CFS_DS HK_TLM_PKT CMD_ERROR_COUNT
+                      BUTTON 'CFS_DS NOOP' 'cmd("CFS_DS NOOP")'
+                    END
+                    VERTICALBOX
+                      SECTIONHEADER "CFS_FM - File Manager App"
+                      LABELVALUE CFS_FM HK_TLM_PKT CMD_VALID_COUNT
+                      LABELVALUE CFS_FM HK_TLM_PKT CMD_ERROR_COUNT
+                      BUTTON 'CFS_FM NOOP' 'cmd("CFS_FM NOOP")'
+                    END
+                    VERTICALBOX
+                      SECTIONHEADER "CFS_HK - Housekeeping App"
+                      LABELVALUE CFS_HK HK_TLM_PKT CMD_VALID_COUNT
+                      LABELVALUE CFS_HK HK_TLM_PKT CMD_ERROR_COUNT
+                      BUTTON 'CFS_HK NOOP' 'cmd("CFS_HK NOOP")'
+                    END
+                    VERTICALBOX
+                      SECTIONHEADER "CFS_HS - Health and Safety App"
+                      LABELVALUE CFS_HS HK_TLM_PKT CMD_VALID_COUNT
+                      LABELVALUE CFS_HS HK_TLM_PKT CMD_ERROR_COUNT
+                      BUTTON 'CFS_HS NOOP' 'cmd("CFS_HS NOOP")'
+                    END
+                    VERTICALBOX
+                      SECTIONHEADER "CFS_SC - Stored Commands App"
+                      LABELVALUE CFS_SC HK_TLM_PKT CMD_COUNT
+                      LABELVALUE CFS_SC HK_TLM_PKT CMD_ERR_COUNT
+                      BUTTON 'CFS_SC NOOP' 'cmd("CFS_SC NOOP")'
+                    END
+                END
+            END
+            TABITEM "SRL APPS"
+                VERTICALBOX
+                    VERTICALBOX
+                      SECTIONHEADER "TO_LAB - Telemetry App"
+                      LABELVALUE TO_LAB STATUS CMD_VALID_COUNT
+                      LABELVALUE TO_LAB STATUS CMD_ERROR_COUNT
+                      BUTTON 'TO_LAB NOOP' 'cmd("TO_LAB NOOP")'
+                    END
+                    VERTICALBOX
+                      SECTIONHEADER "CI_LAB - Command App"
+                      LABELVALUE CI_LAB STATUS CMD_VALID_COUNT
+                      LABELVALUE CI_LAB STATUS CMD_ERROR_COUNT
+                      BUTTON 'CI_LAB NOOP' 'cmd("CI_LAB NOOP")'
+                    END
+                    VERTICALBOX
+                      SECTIONHEADER "I2C_MPL3115A2 - MPL3115A2 App"
+                      LABELVALUE I2C_MPL3115A2 HK_TLM_PKT CMD_VALID_COUNT
+                      LABELVALUE I2C_MPL3115A2 HK_TLM_PKT CMD_ERROR_COUNT
+                      BUTTON 'I2C_MPL3115A2 NOOP' 'cmd("I2C_MPL3115A2 NOOP")'
+                    END
+                    VERTICALBOX
+                      SECTIONHEADER "I2C_AltIMU - AltIMU App"
+                      LABEL "NOT IMPLEMENTED!"
+                    END
+                END
+            END
+        END
+    END
+    VERTICALBOX
+        VERTICALBOX
+            VALUERANGEBAR SAMPLE_APP STATUS CMD_VALID_COUNT 0 10
+            VALUELIMITSBAR SAMPLE_APP STATUS CMD_VALID_COUNT
+            BUTTON 'SAMPLE_APP NOOP' 'cmd("SAMPLE_APP NOOP")'
+            BUTTON 'SAMPLE_APP RESET' 'cmd("SAMPLE_APP RESET_CTRS")'
+        END
+        VERTICALBOX
+            SECTIONHEADER "Enable Telemetry"
+            NAMED_WIDGET IP_ADDR TEXTFIELD 48 "127.0.0.1"
+            BUTTON 'TO_LAB ENABLE' 'cmd("TO_LAB OUTPUT_ENABLE with IP_ADDR #{get_named_widget("IP_ADDR").text}")'
+        END
+    END
+END
+
+END

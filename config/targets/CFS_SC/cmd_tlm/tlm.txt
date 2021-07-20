@@ -1,4 +1,4 @@
-TELEMETRY SC HK_TLM_PKT BIG_ENDIAN "Housekeeping telemetry packet for Stored Command Application"
+TELEMETRY CFS_SC HK_TLM_PKT BIG_ENDIAN "Housekeeping telemetry packet for Stored Command Application"
   APPEND_ID_ITEM CCSDS_STREAMID 16 UINT 0x08AA "CCSDS Packet Identification" BIG_ENDIAN
   APPEND_ITEM CCSDS_SEQUENCE     16 UINT "CCSDS Packet Sequence Control" BIG_ENDIAN
   APPEND_ITEM CCSDS_LENGTH           16 UINT "CCSDS Packet Data Length" BIG_ENDIAN

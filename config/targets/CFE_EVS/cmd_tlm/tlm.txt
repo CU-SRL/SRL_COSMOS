@@ -5,6 +5,7 @@ TELEMETRY CFE_EVS HK_TLM_PKT BIG_ENDIAN "Housekeeping data (general status) auto
   APPEND_ITEM CCSDS_SECONDS        32 UINT "CCSDS Telemetry Secondary Header (seconds)"
   APPEND_ITEM CCSDS_SUBSECS        16 UINT "CCSDS Telemetry Secondary Header (subseconds)"
   APPEND_ITEM CMD_VALID_COUNT 8 UINT "EVS Command Counter."
+  LIMITS DEFAULT 1 ENABLED -1 -1 5.0 10.0 0 5
   APPEND_ITEM CMD_ERROR_COUNT 8 UINT "EVS Command Error Counter."
   APPEND_ITEM MSG_FMT_MODE    8 UINT "Event message format mode (short/long)."
     STATE Short 0
