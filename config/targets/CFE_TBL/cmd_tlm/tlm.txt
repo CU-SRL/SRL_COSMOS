@@ -4,6 +4,8 @@ TELEMETRY CFE_TBL HK_TLM_PKT BIG_ENDIAN "Telemetry and Housekeeping Packet for T
   APPEND_ITEM CCSDS_LENGTH           16 UINT "CCSDS Packet Data Length" BIG_ENDIAN
   APPEND_ITEM CCSDS_SECONDS        32 UINT "CCSDS Telemetry Secondary Header (seconds)"
   APPEND_ITEM CCSDS_SUBSECS        16 UINT "CCSDS Telemetry Secondary Header (subseconds)"
+  APPEND_ITEM APP_STATUS                  32 UINT "Run Status of App" LITTLE_ENDIAN
+    LIMITS DEFAULT 1 ENABLED 0 0 2 3 0 1
   APPEND_ITEM PADDING                        32 UINT "Padding for 64 bit boundary"
   APPEND_ITEM CMD_VALID_COUNT         8 UINT "Count of valid commands received."
   APPEND_ITEM CMD_ERROR_COUNT         8 UINT "Count of invalid commands received."
