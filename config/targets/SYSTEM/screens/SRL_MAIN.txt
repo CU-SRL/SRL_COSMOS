@@ -34,7 +34,6 @@ HORIZONTALBOX
         TITLE "Command Counts"
         TABBOOK
             TABITEM "CFE APPS (CORE)"
-                VERTICALBOX
                     VERTICALBOX
                       SECTIONHEADER "CFE_ES - Executive Services"
                       LABELVALUE CFE_ES HK_TLM_PKT CMD_VALID_COUNT
@@ -65,10 +64,8 @@ HORIZONTALBOX
                       LABELVALUE CFE_TIME HK_TLM_PKT CMD_ERROR_COUNT
                       BUTTON 'CFE_TIME NOOP' 'cmd("CFE_ES NOOP")'
                     END
-                END
             END
             TABITEM "CFS APPS"
-                VERTICALBOX
                     VERTICALBOX
                       SECTIONHEADER "CFS_CS - Checksum App"
                       LABELVALUE CFS_CS HK_TLM_PKT CMD_VALID_COUNT
@@ -105,10 +102,8 @@ HORIZONTALBOX
                       LABELVALUE CFS_SC HK_TLM_PKT CMD_ERR_COUNT
                       BUTTON 'CFS_SC NOOP' 'cmd("CFS_SC NOOP")'
                     END
-                END
             END
             TABITEM "SRL APPS"
-                VERTICALBOX
                     VERTICALBOX
                       SECTIONHEADER "TO_LAB - Telemetry App"
                       LABELVALUE TO_LAB STATUS CMD_VALID_COUNT
@@ -131,22 +126,19 @@ HORIZONTALBOX
                       SECTIONHEADER "I2C_AltIMU - AltIMU App"
                       LABEL "NOT IMPLEMENTED!"
                     END
-                END
             END
         END
     END
     VERTICALBOX
-        VERTICALBOX
-            VALUERANGEBAR SAMPLE_APP STATUS CMD_VALID_COUNT 0 10
-            VALUELIMITSBAR SAMPLE_APP STATUS CMD_VALID_COUNT
-            BUTTON 'SAMPLE_APP NOOP' 'cmd("SAMPLE_APP NOOP")'
-            BUTTON 'SAMPLE_APP RESET' 'cmd("SAMPLE_APP RESET_CTRS")'
-        END
-        VERTICALBOX
-            SECTIONHEADER "Enable Telemetry"
-            NAMED_WIDGET IP_ADDR TEXTFIELD 48 "127.0.0.1"
-            BUTTON 'TO_LAB ENABLE' 'cmd("TO_LAB OUTPUT_ENABLE with IP_ADDR #{get_named_widget("IP_ADDR").text}")'
-        END
+        VALUERANGEBAR SAMPLE_APP STATUS CMD_VALID_COUNT 0 10
+        VALUELIMITSBAR SAMPLE_APP STATUS CMD_VALID_COUNT
+        BUTTON 'SAMPLE_APP NOOP' 'cmd("SAMPLE_APP NOOP")'
+        BUTTON 'SAMPLE_APP RESET' 'cmd("SAMPLE_APP RESET_CTRS")'
+    END
+    VERTICALBOX
+        SECTIONHEADER "Enable Telemetry"
+        NAMED_WIDGET IP_ADDR TEXTFIELD 48 "127.0.0.1"
+        BUTTON 'TO_LAB ENABLE' 'cmd("TO_LAB OUTPUT_ENABLE with IP_ADDR #{get_named_widget("IP_ADDR").text}")'
     END
 END
 
