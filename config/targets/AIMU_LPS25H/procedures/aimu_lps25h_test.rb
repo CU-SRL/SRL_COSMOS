@@ -1,16 +1,16 @@
 # To add this test to Test Runner edit config/tools/test_runner/test_runner.txt
 # Add this line:
-#   LOAD_UTILITY 'i2c_aimu_lis3mdl_test'
+#   LOAD_UTILITY 'aimu_lps25h_test'
 #
 # Test Runner test script
-class I2c_aimu_lis3mdlTest < Cosmos::Test
+class aimu_lps25hTest < Cosmos::Test
   # def setup
   #   # Implement group level setup
   # end
 
   def test_command
-    cmd("I2C_AIMU_LIS3MDL COMMAND")
-    wait_check("I2C_AIMU_LIS3MDL STATUS BOOL == 'FALSE'", 5)
+    cmd("AIMU_LPS25H COMMAND")
+    wait_check("AIMU_LPS25H STATUS BOOL == 'FALSE'", 5)
   end
 
   # def teardown
@@ -18,14 +18,14 @@ class I2c_aimu_lis3mdlTest < Cosmos::Test
   # end
 end
 
-class I2c_aimu_lis3mdlSuite < Cosmos::TestSuite
+class aimu_lps25hSuite < Cosmos::TestSuite
   # def setup
   #   # Implement suite level setup
   # end
 
   def initialize
     super()
-    add_test('I2c_aimu_lis3mdlTest')
+    add_test('aimu_lps25hTest')
   end
 
   # def teardown

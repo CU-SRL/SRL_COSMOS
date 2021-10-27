@@ -4,5 +4,5 @@
 # Modify this according to your actual target connection
 # Please see the COSMOS Interface Configuration documentation
 
-#INTERFACE I2C_AIMU_LIS3MDL_INT tcpip_client_interface.rb localhost 8080 8081 10.0 nil BURST 4 0xDEADBEEF
-  TARGET I2C_AIMU_LIS3MDL
+#INTERFACE AIMU_LIS3MDL_INT tcpip_client_interface.rb localhost 8080 8081 10.0 nil BURST 4 0xDEADBEEF
+  TARGET AIMU_LIS3MDL

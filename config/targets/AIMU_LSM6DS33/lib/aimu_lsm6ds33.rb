@@ -1,10 +1,10 @@
 # This class can be used in your scripts like so:
-#   require 'i2c_aimu_lis3mdl'
-#   i2c_aimu_lis3mdl = I2c_aimu_lis3mdl.new
-#   i2c_aimu_lis3mdl.utility
+#   require 'i2c_aimu_lsm6ds33'
+#   i2c_aimu_lsm6ds33 = I2c_aimu_lsm6ds33.new
+#   i2c_aimu_lsm6ds33.utility
 # For more information see the COSMOS scripting guide
 
-class I2c_aimu_lis3mdl
+class aimu_lsm6ds33
   def utility
   end
 end

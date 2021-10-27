@@ -9,7 +9,7 @@
 #AUTO_INTERFACE_TARGETS # Use cmd_tlm_server.txt from all targets declared in system.txt
 #COLLECT_METADATA
 
-INTERFACE CFS_INT udp_cs_interface.rb 192.168.0.37 1234 1235 nil nil 128 nil nil
+INTERFACE CFS_INT udp_cs_interface.rb 192.168.0.36 1234 1235 nil nil 128 nil nil
   TARGET SYSTEM
   TARGET CFE_SB
   TARGET CFE_ES
@@ -26,4 +26,6 @@ INTERFACE CFS_INT udp_cs_interface.rb 192.168.0.37 1234 1235 nil nil 128 nil nil
   TARGET SAMPLE_APP
   TARGET TO_LAB
   TARGET CI_LAB
-  TARGET I2C_AIMU_LIS3MDL
+  TARGET AIMU_LIS3MDL
+  #TARGET I2C_AIMU_LPS25H
+  TARGET AIMU_LSM6DS33

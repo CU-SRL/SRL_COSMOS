@@ -1,0 +1,8 @@
+# This is a segment of the main config/tools/cmd_tlm_server/cmd_tlm_server.txt
+# that will be used when that files specifies AUTO_INTERFACE_TARGETS or INTERFACE_TARGET I2C_AIMU_LSM6DS33.
+
+# Modify this according to your actual target connection
+# Please see the COSMOS Interface Configuration documentation
+
+#INTERFACE I2C_AIMU_LSM6DS33_INT tcpip_client_interface.rb localhost 8080 8081 10.0 nil BURST 4 0xDEADBEEF
+  TARGET AIMU_LSM6DS33
