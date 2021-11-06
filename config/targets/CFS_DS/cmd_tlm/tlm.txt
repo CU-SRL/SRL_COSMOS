@@ -4,6 +4,8 @@ TELEMETRY CFS_DS HK_TLM_PKT BIG_ENDIAN "DS Housekeeping packet"
   APPEND_ITEM CCSDS_LENGTH           16 UINT "CCSDS Packet Data Length" BIG_ENDIAN
   APPEND_ITEM CCSDS_SECONDS        32 UINT "CCSDS Telemetry Secondary Header (seconds)"
   APPEND_ITEM CCSDS_SUBSECS        16 UINT "CCSDS Telemetry Secondary Header (subseconds)"
+  APPEND_ITEM DATA_STORAGE                  32 UINT "Run Status of App" LITTLE_ENDIAN
+    LIMITS DEFAULT 1 ENABLED -1 -1 2 3 0 1
   APPEND_ITEM CMD_VALID_COUNT    8 UINT "Command Execution Counter."
   APPEND_ITEM CMD_ERROR_COUNT    8 UINT "Command Error Counter."
   APPEND_ITEM DEST_LOAD_COUNT    8 UINT "Count of destination file table loads"

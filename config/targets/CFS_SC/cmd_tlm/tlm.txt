@@ -4,6 +4,8 @@ TELEMETRY CFS_SC HK_TLM_PKT BIG_ENDIAN "Housekeeping telemetry packet for Stored
   APPEND_ITEM CCSDS_LENGTH           16 UINT "CCSDS Packet Data Length" BIG_ENDIAN
   APPEND_ITEM CCSDS_SECONDS        32 UINT "CCSDS Telemetry Secondary Header (seconds)"
   APPEND_ITEM CCSDS_SUBSECS        16 UINT "CCSDS Telemetry Secondary Header (subseconds)"
+  APPEND_ITEM STORED_COMMANDS                  32 UINT "Run Status of App" LITTLE_ENDIAN
+    LIMITS DEFAULT 1 ENABLED -1 -1 2 3 0 1
   APPEND_ITEM ATS_NUMBER 8 UINT "current ATS number  1 = ATS A, 2 = ATS B"
   APPEND_ITEM ATP_STATE 8 UINT "current ATP state valid values are: 2 = IDLE, 5 = EXECUTING"
   APPEND_ITEM CONTINUE_ATS_FAIL_FLAG 8 UINT "Continue if TRUE, stop if FALSE"
