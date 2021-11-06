@@ -26,7 +26,7 @@ COSMOS is a ground station framework designed to be used with vehicles of any ca
 ---
 ## Compilation Instructions
 
-** TO DO **
+bash <(\curl -sSL https://raw.githubusercontent.com/BallAerospace/COSMOS/cosmos4/vendor/installers/linux_mac/INSTALL_COSMOS.sh)
 
 ### Instructions for installing COSMOS
 
