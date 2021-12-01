@@ -10,7 +10,7 @@
 4. [Code Version Notes](#Code-Version-Notes)
 
 ## Introduction
-This is the Ball Aerospace COSMOS repository for the Avionics team of the [Sounding Rocket Laboratory](https://www.colorado.edu/studentgroups/cobra/ "CU Sounding Rocket Laboratory Website") at the University of Colorado, Boulder.
+This is the Ball Aerospace COSMOS repository for the Avionics team of the [Sounding Rocket Laboratory](https://www.colorado.edu/studentgroups/cobra/ "CU Sounding Rocket Laboratory Website") at the University of Colorado, Boulder. This specific branch is for new members to get comfortable coding with COSMOS/cFS.
 
 COSMOS is a ground station framework designed to be used with vehicles of any caliber from Satellite to Rockets to UAVs. The CU Sounding Rocket Laboratory uses this framework as the basis for the ground software that is one the receiving end of the CUSRL CFS Flight Software.
 
