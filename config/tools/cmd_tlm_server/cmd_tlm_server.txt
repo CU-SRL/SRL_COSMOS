@@ -9,5 +9,5 @@
 #AUTO_INTERFACE_TARGETS # Use cmd_tlm_server.txt from all targets declared in system.txt
 #COLLECT_METADATA
 
-INTERFACE CFS_INT udp_cs_interface.rb 192.168.0.36 1234 1235 nil nil 128 nil nil
+INTERFACE CFS_INT udp_cs_interface.rb 127.0.0.1 1234 1235 nil nil 128 nil nil
   TARGET SYSTEM
