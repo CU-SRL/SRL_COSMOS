@@ -4,6 +4,6 @@
 # Modify this according to your actual target connection
 # Please see the COSMOS Interface Configuration documentation
 
-#INTERFACE TO_LAB_INT udp_cs_interface.rb 192.168.1.58 1234 1235 nil nil 128 nil nil
+#INTERFACE TO_LAB_INT udp_cs_interface.rb 127.0.0.1 1234 1235 nil nil 128 nil nil
 
 TARGET TO_LAB

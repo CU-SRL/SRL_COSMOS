@@ -4,5 +4,5 @@
 # Modify this according to your actual target connection
 # Please see the COSMOS Interface Configuration documentation
 
-# INTERFACE CFE_TIME_INT udp_cs_interface.rb 192.168.1.58 1234 1235 nil nil 128 nil nil
+# INTERFACE CFE_TIME_INT udp_cs_interface.rb 127.0.0.1 1234 1235 nil nil 128 nil nil
   TARGET CFE_TIME
