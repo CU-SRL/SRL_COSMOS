@@ -31,29 +31,45 @@ COSMOS is a ground station framework designed to be used with vehicles of any ca
 ---
 
 #### Installing via Docker (Mac OS)
-1. Make sure you have **xquartz** by running xclock, it should pop up then exit xclock.
-2. Install Docker Desktop from [Docker](https://www.docker.com/get-started)
+1. Make sure you have xquartz by running xclock, it should pop up then exit xclock.
+2. Install Docker Desktop from https://www.docker.com/get-started
 3. Clone the SRL_COSMOS Repository into your ~ folder
 4. Open a terminal inside the ~/SRL_COSMOS directory delete the Gemfile.lock file
-    A. use the command $rm -rf Gemfile.lock$
-5. Then install the cosmos container, inside a terminal type $docker pull ballaerospace/cosmos$, then let it do it’s thing
-6. In xquartz, go to **Preferences -> Settings** and Check the *Allow Network Clients*, then restart **xquartz**
-7. From this point on you have to do this *everytime* you want to start Cosmos
-8. **MAKE SURE XQUARTZ IS STARTED**
-9. Then in the terminal do $xhost + 127.0.0.1$
-10. Then to start SRL COSMOS use the following command, $docker run --rm -e DISPLAY=host.docker.internal:0 -e QT_X11_NO_MITSHM=1 -p 1234:1234/udp -p 1235:1235/udp -v ~/SRL_COSMOS:/cosmos ballaerospace/cosmos$
+5. rm -rf Gemfile.lock
+6. Then install the cosmos container, inside a terminal type docker pull ballaerospace/cosmos , then let it do it’s thing
+7. In xquartz, go to Preferences -> Settings and Check the Allow Network Clients, then restart xquartz
 
----
+From this point on you have to do this everytime you want to start Cosmos, unless you create an alias
 
-#### Installing via Docker (Windows)
-
-** TO DO **
+1. **MAKE SURE XQUARTZ IS STARTED**
+2. Then in the terminal do xhost + 127.0.0.1
+3. Then to start SRL COSMOS use the following command,  docker run --rm -e DISPLAY=host.docker.internal:0 -e QT_X11_NO_MITSHM=1 -p 1234:1234/udp -p 1235:1235/udp -v ~/SRL_COSMOS:/cosmos ballaerospace/cosmos
+4. And SRL_COSMOS should now work! :D
 
 ---
 
 #### Installing via Docker (Linux)
+1. Install Docker using https://docs.docker.com/engine/install/ubuntu/ , if you have a different distro the  side panel has other instructions for them
+2. Then clone the SRL_COSMOS Repository into your ~ folder
+3. Open a terminal inside the ~/SRL_COSMOS directory delete the Gemfile.lock file
+4. rm -rf Gemfile.lock
+5. Then install the cosmos container, inside a terminal type docker pull ballaerospace/cosmos , then let it do it’s thing
+6. Finally execute SRL COSMOS with the following command: docker run --net=host --rm -e DISPLAY -e QT_X11_NO_MITSHM=1 -v ~/SRL_COSMOS:/cosmos ballaerospace/cosmos
+7. And SRL_COSMOS should come up! :D
 
-** TO DO **
+---
+
+#### Installing via Docker (Windows)
+1. Cry…
+2. Install Docker using https://www.docker.com/get-started
+3. Install MobaXterm https://mobaxterm.mobatek.net
+4. Then clone the SRL_COSMOS Repository into your home folder
+5. Delete the Gemfile.lock file in SRL_COSMOS
+6. Launch MobaXterm, go to Settings -> Configuration -> X11 and set X11 Remote Access to Full, then click Ok
+7. Then open a new terminal and take note of the Your DISPLAY is set to X.X.X.X:X0 line and more specifically the ip that is in places of those X’s…
+8. Then in the terminal do: set DISPLAY=<My XServer's IP Address ie 10.0.0.1:0.0> where you put the ip address from the DISPLAY line.
+9. Then run SRL_COSMOS: docker run --rm -e DISPLAY -e QT_X11_NO_MITSHM=1 -v C:/Users/<user>/SRL_COSMOS:/cosmos ballaerospace/cosmos
+10. And it should run! :D
 
 ---
 ## Usage Instructions
