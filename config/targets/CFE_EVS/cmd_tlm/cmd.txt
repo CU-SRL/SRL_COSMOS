@@ -18,7 +18,7 @@ COMMAND CFE_EVS ENABLE_EVENT_TYPE BIG_ENDIAN "Enables the command specified Even
   APPEND_PARAMETER CCSDS_LENGTH 16 UINT MIN_UINT16 MAX_UINT16 0 "CCSDS Packet Data Length" BIG_ENDIAN
   APPEND_PARAMETER CCSDS_CHECKSUM 8 UINT MIN_UINT8 MAX_UINT8 0 "CCSDS Command Checksum"
   APPEND_PARAMETER CCSDS_FC 8 UINT MIN_UINT8 MAX_UINT8 2 "CCSDS Command Function Code"
-  APPEND_PARAMETER BITMASK  8 UINT MIN_UINT8 MAX_UINT8 0 "Debug (0), Informational (1), Error (2), Critical (3)"
+  APPEND_PARAMETER BITMASK  8 UINT MIN_UINT8 MAX_UINT8 0 "Event type bitmask = Debug (1), Informational (2), Error (4), Critical (8)"
   APPEND_PARAMETER SPARE    8 UINT MIN_UINT8 MAX_UINT8 0 "Pad to even byte"
   
 COMMAND CFE_EVS DISABLE_EVENT_TYPE BIG_ENDIAN "Disables the command specified Event Type"
@@ -27,7 +27,7 @@ COMMAND CFE_EVS DISABLE_EVENT_TYPE BIG_ENDIAN "Disables the command specified Ev
   APPEND_PARAMETER CCSDS_LENGTH 16 UINT MIN_UINT16 MAX_UINT16 0 "CCSDS Packet Data Length" BIG_ENDIAN
   APPEND_PARAMETER CCSDS_CHECKSUM 8 UINT MIN_UINT8 MAX_UINT8 0 "CCSDS Command Checksum"
   APPEND_PARAMETER CCSDS_FC 8 UINT MIN_UINT8 MAX_UINT8 3 "CCSDS Command Function Code"
-  APPEND_PARAMETER BITMASK  8 UINT MIN_UINT8 MAX_UINT8 0 "Debug (0), Informational (1), Error (2), Critical (3)"
+  APPEND_PARAMETER BITMASK  8 UINT MIN_UINT8 MAX_UINT8 0 "Event type bitmask Debug (1), Informational (2), Error (4), Critical (8)"
   APPEND_PARAMETER SPARE    8 UINT MIN_UINT8 MAX_UINT8 0 "Pad to even byte"
  
 COMMAND CFE_EVS SET_EVENT_FORMAT BIG_ENDIAN "Sets the event format mode to the command specified value"
@@ -46,7 +46,7 @@ COMMAND CFE_EVS ENABLE_APP_EVENT_TYPE BIG_ENDIAN "Enables the command specified 
   APPEND_PARAMETER CCSDS_CHECKSUM 8 UINT MIN_UINT8 MAX_UINT8 0 "CCSDS Command Checksum"
   APPEND_PARAMETER CCSDS_FC 8 UINT MIN_UINT8 MAX_UINT8 5 "CCSDS Command Function Code"
   APPEND_PARAMETER APP_NAME 120 STRING                   "default" "Application name to use in the command"
-  APPEND_PARAMETER BITMASK    8 UINT MIN_UINT8 MAX_UINT8 0      "Debug (0), Informational (1), Error (2), Critical (3)"
+  APPEND_PARAMETER BITMASK    8 UINT MIN_UINT8 MAX_UINT8 0      "Event type bitmask Debug (1), Informational (2), Error (4), Critical (8)"
   APPEND_PARAMETER SPARE      8 UINT MIN_UINT8 MAX_UINT8 0         "Pad to even byte"
   
 COMMAND CFE_EVS DISABLE_APP_EVENT_TYPE BIG_ENDIAN "Disables the command specified event type for the command specified application"
@@ -56,7 +56,7 @@ COMMAND CFE_EVS DISABLE_APP_EVENT_TYPE BIG_ENDIAN "Disables the command specifie
   APPEND_PARAMETER CCSDS_CHECKSUM 8 UINT MIN_UINT8 MAX_UINT8 0 "CCSDS Command Checksum"
   APPEND_PARAMETER CCSDS_FC 8 UINT MIN_UINT8 MAX_UINT8 6 "CCSDS Command Function Code"
   APPEND_PARAMETER APP_NAME 120 STRING                   "default" "Application name to use in the command"
-  APPEND_PARAMETER BITMASK    8 UINT MIN_UINT8 MAX_UINT8 0      "Debug (0), Informational (1), Error (2), Critical (3)"
+  APPEND_PARAMETER BITMASK    8 UINT MIN_UINT8 MAX_UINT8 0      "Event type bitmask Debug (1), Informational (2), Error (4), Critical (8)"
   APPEND_PARAMETER SPARE      8 UINT MIN_UINT8 MAX_UINT8 0         "Pad to even byte"
   
 COMMAND CFE_EVS ENABLE_APP_EVENTS BIG_ENDIAN "Enables the command specified application to send events through the Event Service"
