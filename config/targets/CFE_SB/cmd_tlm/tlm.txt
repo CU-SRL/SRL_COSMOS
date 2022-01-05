@@ -1,1 +1,23 @@
-TELEMETRY CFE_SB HK_TLM_PKT BIG_ENDIAN "Telemetry description"
+TELEMETRY CFE_SB HK_TLM_PKT BIG_ENDIAN "Software Bus Housekeeping Packet"
+    APPEND_ID_ITEM CCSDS_STREAMID 16 UINT 0x0803 "CCSDS Packet Identification" BIG_ENDIAN
+    APPEND_ITEM CCSDS_SEQUENCE 16 UINT "CCSDS Packet Sequence Control" BIG_ENDIAN
+    APPEND_ITEM CCSDS_LENGTH 16 UINT "CCSDS Packet Data Length" BIG_ENDIAN
+    APPEND_ITEM CCSDS_SECONDS 32 UINT "Telemetry Seconds For Secondary Header" 
+    APPEND_ITEM CCSDS_SUB_SECONDS 16 UINT "Telemetry Subseconds For Secondary Header" 
+    APPEND_ITEM CMND_CNT 8 UINT "Brief Count of Valid Commands Recieved" 
+    APPEND_ITEM CMND_ERR_CNT 8 UINT "Brief Count of Invalid Commands Recieved" 
+    APPEND_ITEM SB_NOSUB_CNT 8 UINT "Count of Packets Sent With No Subscribers" 
+    APPEND_ITEM SB_MSGSEND_ERR_CNT 8 UINT "Count of Message Send Errors"
+    APPEND_ITEM SB_MSGREC_ERR_CNT 8 UINT "Count of Message Recieve Errors" 
+    APPEND_ITEM SB_INT_ERR_CNT 8 UINT "Count of Queue Read or Write Errors" 
+    APPEND_ITEM SB_NEW_PIPE_ERR_CNT 8 UINT "Count of Errors in Create Pipe API" 
+    APPEND_ITEM SB_SUB_ERR_CNT 8 UINT "Count of Errors in Subscribe API" 
+    APPEND_ITEM SB_PIPEOPTS_ERR_CNT 8 UINT "Count of Errors in Set/Get Pipe Options API" 
+    APPEND_ITEM SB_DUP_SUB_CNT 8 UINT "Count of Duplicate Subscriptions" 
+    APPEND_ARRAY_ITEM SPR_TO_ALGN 8 UINT 16 "Spare Bytes to Ensure Alignment"
+    APPEND_ITEM PIPE_FLOW_ERR_CNT 16 UINT "Count of Pipe Overflow Errors" 
+    APPEND_ITEM MSG_LIM_ERR_CNT 16 UINT "Count of Message ID to Pipe Errors" 
+    APPEND_ITEM MEM_POOL_HAND *WHAT IS THE SIZE* "Handle to Software Bus Memory Pool" 
+    APPEND_ITEM MEM_IN_USE 32 UINT "Memory in Use" 
+    APPEND_ITEM UNMKD_MEM 32 UINT "Unmarked Memory" 
+
