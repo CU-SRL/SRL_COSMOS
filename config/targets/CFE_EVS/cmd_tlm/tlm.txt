@@ -27,7 +27,7 @@ TELEMETRY CFE_EVS LONG_EVENT_MSG BIG_ENDIAN "Long Event Format Telemetry Packet"
   APPEND_ITEM CCSDS_LENGTH           16 UINT "CCSDS Packet Data Length"
   APPEND_ITEM CCSDS_SECONDS        32 UINT "CCSDS Telemetry Secondary Header (seconds)"
   APPEND_ITEM CCSDS_SUBSECS        16 UINT "CCSDS Telemetry Secondary Header (subseconds)"
-  APPEND_ITEM APP_NAME       CHAR "Application name" // shouldn't app_name be a string of a certain size, if so, why is it different on cFS side
+  APPEND_ITEM APP_NAME       120 STRING "Application name"
   
 TELEMETRY CFE_EVS SHORT_EVENT_MSG BIG_ENDIAN "Short Event Format Telemetry Packet"
   APPEND_ID_ITEM CCSDS_STREAMID 16 UINT 0x0809 "CCSDS Packet Identification"
@@ -35,4 +35,4 @@ TELEMETRY CFE_EVS SHORT_EVENT_MSG BIG_ENDIAN "Short Event Format Telemetry Packe
   APPEND_ITEM CCSDS_LENGTH           16 UINT "CCSDS Packet Data Length"
   APPEND_ITEM CCSDS_SECONDS        32 UINT "CCSDS Telemetry Secondary Header (seconds)"
   APPEND_ITEM CCSDS_SUBSECS        16 UINT "CCSDS Telemetry Secondary Header (subseconds)"
-  APPEND_ITEM APP_NAME       CHAR "Application name"
+  APPEND_ITEM APP_NAME       120 STRING "Application name"
