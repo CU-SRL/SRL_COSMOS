@@ -17,7 +17,7 @@ TELEMETRY CFE_SB HK_TLM_PKT BIG_ENDIAN "Software Bus Housekeeping Packet"
     APPEND_ARRAY_ITEM SPR_TO_ALGN 8 UINT 16 "Spare Bytes to Ensure Alignment"
     APPEND_ITEM PIPE_FLOW_ERR_CNT 16 UINT "Count of Pipe Overflow Errors" 
     APPEND_ITEM MSG_LIM_ERR_CNT 16 UINT "Count of Message ID to Pipe Errors" 
-    APPEND_ITEM MEM_POOL_HAND *WHAT IS THE SIZE* "Handle to Software Bus Memory Pool" 
+    APPEND_ITEM MEM_POOL_HAND 32 UINT "Handle to Software Bus Memory Pool" 
     APPEND_ITEM MEM_IN_USE 32 UINT "Memory in Use" 
     APPEND_ITEM UNMKD_MEM 32 UINT "Unmarked Memory" 
 
