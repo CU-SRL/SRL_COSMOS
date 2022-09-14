@@ -1,5 +1,8 @@
 ![SRL Logo](https://www.colorado.edu/studentgroups/cobra/sites/default/files/styles/slider/public/slider/logo_crop.png?itok=jh4F9ZcZ)
 
+## OBSOLETE NOTICE
+**NOTE: This repository is now obsolete and is maintained for archival/training purposes**
+
 # SRL_COSMOS
 #### Table of contents
 1. [Introduction](#Introduction)
